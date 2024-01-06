@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    /* overflow: hidden; */
+
+}
+
+#body::-webkit-scrollbar{
+    width: 5px;
+}
+
+#body::-webkit-scrollbar-track{
+    /* background-color: red; */
+    background-color: inherit;
+}
+
+#body::-webkit-scrollbar-thumb{
+    background-color: purple;
+}
+
+/* photoshop pic */
+#profile_box {
+    width: 150px;
+    height: 150px;
+    /* background-image:  url(../images/Untitled\ design.png); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+}
+
+#profile_pic {
+    width: 100px;
+    height: 100px;
+    border: 4px solid white;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 50%;
+}
+
+#new_contact {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    color: purple;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#contact_bg {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: none;
+}
+
+#add_contact_box {
+    width: 35%;
+    height: auto;
+    background: white;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 150px;
+
+}
+
+#add_contact_box h1 {
+    text-align: center;
+    color: purple;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 10px;
+
+}
+
+#c_name,
+#c_num {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    border: none;
+    border: 1px solid purple;
+    border-left: 5px solid purple;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+#add,
+#close {
+    width: 100px;
+    padding: 10px;
+    background-color: purple;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    margin-top: 10px;
+
+}
+
+#main_all_contact_box {
+    width: 35%;
+    height: 100vh;
+    /* border: 1px solid red; */
+
+    border: 1px solid inherit;
+    margin: 0 auto;
+}
+
+#contact_header {
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid red; */
+    /* border: 1px solid inherit; */
+}
+
+#contact_header h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    /* margin-top: 20px; */
+
+    /* last */
+    padding-top: 20px;
+
+
+
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    border-bottom: 1px solid black;
+    /* to add back background-color */
+    background-color: inherit;
+    margin-top: 20px;
+    outline: none;
+    padding-left: 3px;
+}
+#all_contact_box{
+    width: 100%;
+    height: 70%;
+    /* border: 1px solid green; */
+    padding: 15px;
+    /* at last */
+    overflow-y: scroll;
+}
+
+#all_contact_box::-webkit-scrollbar{
+    width: 5px;
+}
+
+#all_contact_box::-webkit-scrollbar-track{
+    /* background-color: red; */
+    background-color: inherit;
+}
+
+#all_contact_box::-webkit-scrollbar-thumb{
+    background-color: purple;
+}
+#contact{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px #ccc;
+    margin: 15px 0;
+
+}
+#contact p{
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 5px 0;
+}
+#tool{
+    /* border: 1px solid red; */
+    width: 25%;
+    float: right;
+    margin-top: -20px;
+
+}
+#tool i{
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+/* media */
+@media(max-width:1025px){
+    #tool{
+        margin-top: -40px;
+        width: 50px;
+    }
+
+}
+@media(max-width:769px){
+    #main_all_contact_box{
+        width: 50%;
+    
+    }
+    /* #all_contact_box{
+        margin-top: 20px;
+    } */
+    #add_contact_box{
+        width: 50%;
+    }
+}
+@media(max-width:568px){
+    #main_all_contact_box{
+        width: 100%;
+        padding: 20px;
+        
+    
+    }
+    #new_contact{
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* #all_contact_box{
+        margin-top: 30px;
+    } */
+
+    #profile_box{
+        display: none;
+    }
+    #add_contact_box{
+        width: 90%;
+    }
+}
+
+@media(max-width:350px){
+    /* #all_contact_box{
+        margin-top: 80px;
+    } */
+    #tool i{
+        margin-left: 20px;
+    }
+
+
+}
